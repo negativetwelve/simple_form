@@ -23,6 +23,8 @@ module SimpleForm
       end
 
       def bootstrap3_check_or_radio?
+        puts SimpleForm.bootstrap3
+        puts input_type
         SimpleForm.bootstrap3 && (input_type == :check_boxes || input_type == :radio_buttons)
       end
     end
