@@ -196,6 +196,9 @@ See https://github.com/plataformatec/simple_form/pull/997 for more information.
   mattr_accessor :i18n_scope
   @@i18n_scope = 'simple_form'
 
+  mattr_accessor :bootstrap3
+  @@bootstrap3 = false
+
   # Retrieves a given wrapper
   def self.wrapper(name)
     @@wrappers[name.to_s] or raise WrapperNotFound, "Couldn't find wrapper with name #{name}"
